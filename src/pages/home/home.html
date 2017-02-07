@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="creative_blue">
+    <ion-title>
+      List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list >
+  <button class="ListCls" ion-item *ngFor="let item of items" (click)="itemSelected(item.name)">
+ <img [src]="'../assets/images/' + item.imgs + '.png'"><b class="Txt" color="primary">{{ item.name }}</b>
+  </button>  
+</ion-list>
+</ion-content>
